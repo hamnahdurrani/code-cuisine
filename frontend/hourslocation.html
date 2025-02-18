@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hours and Location</title>
+  <!--css document link-->
+  <link rel="stylesheet" type="text/css" href="hourslocation.css" title="style" />
+  <!--jquery link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--javascript link-->
+  <script src="client_side.js"></script>
+  <!--footer icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--favicon -->
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+  <!--sweet alert-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+  <div class="navigation">
+    <div class="logo">
+      <a href="homepage.html"><img src="media/logo.png" height="69px" /></a>
+    </div>
+    <div class="space"></div>
+    <div class="nav" onclick="">
+      <a href="homepage.html"> Home </a>
+    </div>
+    <div class="nav">
+      <a href="menuPage.html"> Menu </a>
+    </div>
+
+    <div class="nav">
+      <a href="hourslocation.html"> Hours & Location </a>
+    </div>
+    <div class="nav reserve">
+      <a href="hourslocation.html#reserve-button"> Reserve Now </a>
+    </div>
+  </div>
+
+  <!--Hours And Location-->
+  <div class="h-and-l-heading">HOURS & LOCATION</div>
+  <div class="hours-location">
+    <div class="h-and-l">
+      <!--Hours-->
+      <div class="hours">
+        <h3>
+          <table class="fadeinleft">
+            <caption>
+              HOURS
+            </caption>
+            <tr>
+              <td>Mon</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Thu</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Fri</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Sat</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+            <tr>
+              <td>Sun</td>
+              <td>10am</td>
+              <td>-7pm</td>
+            </tr>
+          </table>
+        </h3>
+      </div>
+    </div>
+    <div class="h-and-l">
+      <!--location-->
+      <div class="location fadeinright">
+        <h2>4700 Keele St, Toronto, ON M3J 1P3</h2>
+        <br />
+        <a href="https://maps.app.goo.gl/6EMDamvfsgWrMiCX6"><img src="media/maps.png" height="300px" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--Make a reservation-->
+  <div class="make-reservation">
+    MAKE A RESERVATION
+
+    <!--Reservation Details-->
+    <div class="details">
+      <div class="detail table">
+        <center>
+          <table>
+            <tr>
+              <td>Number of People:</td>
+              <td><input type="number" id="numPeople" min="1" /></td>
+            </tr>
+            <tr>
+              <td>Date of Booking:</td>
+              <td>
+                <input type="date" id="bookingDate" min="2024-04-19" max="2024-07-31" />
+              </td>
+            </tr>
+            <tr>
+              <td>Time:</td>
+              <td><input type="time" id="time" min="10:00" max="21:00" /></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <!--Reservarion button-->
+      <div class="detail" id="reserve-button">
+        <button onclick="pop()" class="reserve-button">RESERVE NOW</button>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="footer">
+    <div class="main-content">
+      <div class="left box">
+        <!--Footer Title-->
+        <h2 class="footertitle">Address</h2>
+        <div class="footertext">
+          <a href="https://maps.app.goo.gl/U5JWBLgXiZienUmw7" style="text-decoration: none">
+            <span style="color: #ffffff">
+              <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+              <!--Address-->
+              4700 Keele St, Toronto, ON M3J 1P3</span></a>
+        </div>
+      </div>
+
+      <!--Contact Details-->
+      <div class="centre box">
+        <h2 class="footertitle">Contact</h2>
+        <div class="footertext">
+          <span style="color: #ffffff"><i class="fa-solid fa-phone" style="color: #ffffff"></i> (416)
+            902-4422
+          </span>
+          <br />
+          <div class="instagram">
+            <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"
+                  style="color: #ffffff"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+      <!--Subscription-->
+      <div class="right box">
+        <h2 class="footertitle">Subscribe to our Newsletter</h2>
+        <div class="subscribe">
+          <form action="#">
+            <div class="email">
+              <div class="emailtext">Enter Your Email</div>
+              <input type="email" required />
+            </div>
+            <div class="button">
+              <button type="submit" class="submitButton" onclick="returnText()">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

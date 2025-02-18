@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Code & Cuisine </title>
+    <!--css document link-->
+    <link rel="stylesheet" type="text/css" href="homepage.css" title="style">
+    <!--jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--javascript link-->
+    <script src="client_side.js"></script>
+    <!--footer icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--favicon -->
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <!--sweet alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <!--Navigation bar -->
+    <div class="navigation">
+        <div class="logo">
+            <a href="homepage.html"><img src="media/logo.png" height="69px"></a>
+        </div>
+        <div class="space"></div>
+        <div class="nav" onclick="">
+            <a href="homepage.html">
+                Home
+            </a>
+        </div>
+        <div class="nav">
+            <a href="menuPage.html">
+                Menu
+            </a>
+        </div>
+
+        <div class="nav">
+            <a href="hourslocation.html">
+                Hours & Location
+            </a>
+        </div>
+        <div class="nav reserve">
+            <a href="hourslocation.html#reserve-button">
+                Reserve Now
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--Intro Video-->
+    <section id="videoSection">
+        <video id="bgVideo" autoplay muted loop>
+            <source src="media/code&cuisine.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!--Events and Specials-->
+    <div id="back">
+        <!--Upcoming Events-->
+        <div class="row">
+            <!-- Text-->
+            <div class="column">
+                <p>
+                    <span class='heading'> Upcoming Events </span> <br><br>
+                    <strong>
+                        Wine Tasting Evening <br><br>
+                        Date: May 20 2024 <br><br>
+                        Time: 6pm to 8pm
+                    </strong><br><br>
+                    <center>
+                        Join us for an unforgettable evening of wine tasting! <br><br>
+                        Explore a curated selection of exquisite wines from around the world, <br>
+                        expertly paired with delicious appetizers prepared by our talented chefs. <br><br>
+                        Whether you're a wine enthusiast or a novice, this event promises an enriching experience for
+                        all.
+                    </center>
+                </p>
+            </div>
+
+            <!--Image-->
+            <div class="column">
+                <img src="media/events.jpg" alt="Code & Cuisine's Dining Hall">
+            </div>
+        </div>
+
+
+        <!--Weekly Specials-->
+        <section id="promotion">
+            <p class="my-paragraph">
+                <strong>Special Offers </strong><br>
+                <span class="heading"> Weekly Specials </span><br>
+                Enjoy our exclusive weekly specials crafted by our chefs, <br>
+                featuring seasonal ingredients and innovative culinary techniques.<br>
+                From mouthwatering appetizers to delectable desserts, there's something for everyone to savor.
+                <br>
+                <span class="heading"> Happy Hour Delights </span><br>
+                Unwind after a long day with our Happy Hour specials! Indulge in discounted drinks <br>
+                and appetizers while soaking in the cozy ambiance of our restaurant. <br>
+                <strong>Available every weekday from 4 PM to 7 PM.</strong>
+            </p>
+        </section>
+    </div>
+
+
+    <!--Promotions Pop up-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="close">&times;</div>
+            <p>Celebrate St-George Day on coming April 22nd with your family and friends!</p>
+            <img src="media/St-George.jpg" alt="St-George Day Picture">
+            <a href="hourslocation.html#reserve-button"><button id="reservationButton">BOOK NOW</button></a>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="main-content">
+            <div class="left box">
+                <!--Footer Title-->
+                <h2 class="footertitle">Address</h2>
+                <div class="footertext">
+                    <a href="https://maps.app.goo.gl/U5JWBLgXiZienUmw7" style="text-decoration: none">
+                        <span style="color: #ffffff">
+                            <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+                            <!--Address-->
+                            4700 Keele St, Toronto, ON M3J 1P3</span></a>
+                </div>
+            </div>
+
+            <!--Contact Details-->
+            <div class="centre box">
+                <h2 class="footertitle">Contact</h2>
+                <div class="footertext">
+                    <span style="color: #ffffff"><i class="fa-solid fa-phone" style="color: #ffffff"></i> (416)
+                        902-4422
+                    </span>
+                    <br />
+                    <div class="instagram">
+                        <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"
+                                    style="color: #ffffff"></i></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Subscription-->
+            <div class="right box">
+                <h2 class="footertitle">Subscribe to our Newsletter</h2>
+                <div class="subscribe">
+                    <form action="#">
+                        <div class="email">
+                            <div class="emailtext">Enter Your Email</div>
+                            <input type="email" required />
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="submitButton" onclick="returnText()">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

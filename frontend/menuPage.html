@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu</title>
+  <!--css document link-->
+  <link rel="stylesheet" type="text/css" href="menuPage.css" title="style" />
+  <!--jquery link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--javascript link-->
+  <script src="client_side.js"></script>
+  <!--footer icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--favicon -->
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
+  <!--sweet alert-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="body">
+  <!--Navigation bar-->
+  <div class="navigation">
+    <div class="logo">
+      <a href="homepage.html"><img src="media/logo.png" height="69px" /></a>
+    </div>
+    <div class="space"></div>
+    <div class="nav" onclick="">
+      <a href="homepage.html"> Home </a>
+    </div>
+    <div class="nav">
+      <a href="menuPage.html"> Menu </a>
+    </div>
+    <div class="nav">
+      <a href="hourslocation.html"> Hours & Location </a>
+    </div>
+    <div class="nav reserve">
+      <a href="hourslocation.html#reserve-button"> Reserve Now </a>
+    </div>
+  </div>
+
+  <!--Menu Title-->
+  <h1 id="menuTitle">Our Featured Menu Items</h1>
+
+  <!--Breakfast Specials-->
+  <section id="sections" class="container2">
+    <!--Heading-->
+    <h1 class="title">Breakfast Specials</h1>
+    <div class="box1 animated fadeinleft">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/breakfastflatbread.jpg" id="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 450 (per serving) <br />
+              Contains gluten, dairy, & may contain traces of nuts
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para1">
+        <!--Dish-->
+        <p class="food">Burrata Flatbread | $10</p>
+        <p></p>
+        <p class="food-description">
+          Burrata flatbread is a delectable dish that combines the rich
+          creaminess of burrata cheese with the savory flavors of flatbread.
+          This typically features a crispy yet tender flatbread base, topped with luscious burrata cheese, fresh tomatoes and
+          fragrant basil leaves.
+        </p>
+      </div>
+    </div>
+    <div class="box2 animated fadeinright">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/berrydelight.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 200 (per serving) <br />Contains gluten, dairy, & is
+              nut free
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para2">
+        <!--Dish-->
+        <p class="food">Berry Pancake Delight | $12</p>
+        <p class="food-description">
+          Indulge in the ultimate breakfast delight with our Berry Pancake
+          Delight! This mouthwatering dish features fluffy, golden pancakes
+          generously topped with a medley of succulent berries, including
+          strawberries, blueberries, and raspberries, bursting with freshness
+          and flavor.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <!--Lunch Specials-->
+  <section id="sections">
+    <!--Heading-->
+    <h1 class="title">Lunch Specials</h1>
+    <div class="box1 animated fadeinleft">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/caesersalad.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 300 (per serving) <br />
+              Contains gluten, dairy, eggs & may contain traces of nuts
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para1">
+        <!--Dish-->
+        <p class="food">Classic Caeser Salad | $8</p>
+        <p></p>
+        <p class="food-description">
+          Immerse yourself in the timeless flavors of our Caesar Salad, a
+          culinary classic that embodies simplicity and sophistication. Crisp
+          romaine lettuce leaves are artfully tossed in our house-made Caesar
+          dressing, a harmonious blend of tangy anchovies, creamy Parmesan
+          cheese, and zesty lemon juice.
+        </p>
+      </div>
+    </div>
+    <div class="box2 animated fadeinright">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/pizza.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 250 (per serving) <br />
+              Contains gluten, dairy, & may contain traces of nuts
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para2">
+        <!--Dish-->
+        <p class="food">Margherita Pizza | $18</p>
+        <p class="food-description">
+          Experience the classic simplicity and enduring elegance of our
+          Margherita Pizza, a culinary masterpiece that captures the essence
+          of Italy's rich heritage. Topped with a luscious San Marzano tomato
+          sauce, made from the finest Italian tomatoes, our pizza bursts with
+          the vibrant flavors of summer.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <!--Dinner Specials-->
+  <section id="sections">
+    <!--Heading-->
+    <h1 class="title">Dinner Specials</h1>
+    <div class="box1 animated fadeinleft">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/steak.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 210 (per serving) <br />
+              Contains dairy and soy (present in seasonings or marinades)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para1">
+        <!--Dish-->
+        <p class="food">Steak | $40</p>
+        <p></p>
+        <p class="food-description">
+          Indulge in our succulent steaks, expertly grilled to perfection and
+          bursting with flavor. Savor every juicy bite of our premium cuts,
+          accompanied by delectable sides and sauces. Elevate your dining
+          experience with our exquisite steak selection at Code and Cuisine
+        </p>
+      </div>
+    </div>
+    <div class="box2 animated fadeinright">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/pasta.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 250 (per serving) <br />
+              Contains wheat (gluten), May contain traces of soy
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para2">
+        <!--Dish-->
+        <p class="food">Creamy Penne Pasta | $18</p>
+        <p class="food-description">
+          Savor the robust flavors of our Penne Arrabbiata, tossed in a zesty
+          tomato sauce infused with garlic, chili peppers, and fresh basil.
+          Each bite offers a perfect balance of heat and tanginess, making it
+          a delightful choice for any pasta enthusiast.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <!--Appetizers-->
+  <section id="sections">
+    <!--Heading-->
+    <h1 class="title">Appetizers</h1>
+    <div class="box1 animated fadeinleft">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/fries.jpg" class="img" />
+          <div class="content">
+            <!--Hover content-->
+            <p>
+              Calories: 340 (per serving) <br />
+              Contains Potatoes, and Vegetable Oil
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para1">
+        <!--Dish-->
+        <p class="food">Classic Fries | $8</p>
+        <p></p>
+        <p class="food-description">
+          Savor the classic taste of our perfectly golden fries. Crispy on the
+          outside, fluffy on the inside, and sprinkled with just the right
+          amount of salt, our fries are a timeless favorite. Enjoy them as a
+          delectable side or indulge in a generous portion as a satisfying
+          snack.
+        </p>
+      </div>
+    </div>
+    <div class="box2 animated fadeinright">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/soup.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 100 (per serving) <br />
+              May contain traces of wheat
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para2">
+        <!--Dish-->
+        <p class="food">Signature Soup | $15</p>
+        <p class="food-description">
+          Experience the comforting warmth of our signature soup. Crafted with
+          the finest ingredients and simmered to perfection, our soup offers a
+          delightful blend of flavors that will tantalize your taste buds.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <!--Dessert-->
+  <section id="sections">
+    <!--Heading-->
+    <h1 class="title">Dessert</h1>
+    <div class="box1 animated fadeinleft">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/lavacake.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 300 (per serving) <br />
+              Contains gluten, dairy, and egg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para1">
+        <!--Dish-->
+        <p class="food">Chocolate Lava Cake | $16</p>
+        <p></p>
+        <p class="food-description">
+          Treat yourself to a sensational dessert experience with our
+          chocolate lava cake. Indulge in the irresistible allure of rich,
+          velvety chocolate cake with a molten center that flows like liquid
+          gold. Each decadent bite is a symphony of flavors and textures, with
+          the perfect harmony of sweetness and depth.
+        </p>
+      </div>
+    </div>
+    <div class="box2 animated fadeinright">
+      <div class="wrapper">
+        <div class="image">
+          <img src="media/pie.jpg" class="img" />
+          <div class="content">
+            <!--Hover Content-->
+            <p>
+              Calories: 300 (per serving) <br />
+              Contains gluten
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="para2">
+        <!--Dish-->
+        <p class="food">Strawberry Lattice Pie | $25</p>
+        <p class="food-description">
+          Enjoy the sweet simplicity of our strawberry lattice pie. Fresh
+          strawberries are baked into a golden, flaky crust, creating a
+          delightful harmony of tart and sweet flavors with every bite. Our
+          lattice design adds a charming touch, allowing the ruby-red fruit to
+          peek through invitingly.
+        </p>
+      </div>
+    </div>
+  </section>
+  <br /><br /><br />
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="main-content">
+      <div class="left box">
+        <!--Footer Title-->
+        <h2 class="footertitle">Address</h2>
+        <div class="footertext">
+          <a href="https://maps.app.goo.gl/U5JWBLgXiZienUmw7" style="text-decoration: none">
+            <span style="color: #ffffff">
+              <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+              <!--Address-->
+              4700 Keele St, Toronto, ON M3J 1P3</span></a>
+        </div>
+      </div>
+
+      <!--Contact Details-->
+      <div class="centre box">
+        <h2 class="footertitle">Contact</h2>
+        <div class="footertext">
+          <span style="color: #ffffff"><i class="fa-solid fa-phone" style="color: #ffffff"></i> (416)
+            902-4422
+          </span>
+          <br />
+          <div class="instagram">
+            <span><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"
+                  style="color: #ffffff"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+      <!--Subscription -->
+      <div class="right box">
+        <h2 class="footertitle">Subscribe to our Newsletter</h2>
+        <div class="subscribe">
+          <form action="#">
+            <div class="email">
+              <div class="emailtext">Enter Your Email</div>
+              <input type="email" required />
+            </div>
+            <div class="button">
+              <button type="submit" class="submitButton" onclick="returnText()">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
