@@ -36,6 +36,5 @@ npm test
 <H3> Sequence diagram </H3>
 <img src = "frontend\media\Seqeuence_diagram.png">
 <H3> Screen recording </H3>
-<video autoplay muted loop>
-    <source src="frontend\media\screen_recording.mp4" type="video/mp4">
- </video>
+https://github.com/user-attachments/assets/8b0abee3-7817-4f9d-b7ef-c306d061d27d
+
