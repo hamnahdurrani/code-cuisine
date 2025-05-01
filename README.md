@@ -12,7 +12,7 @@
 ---
 
 ## Project Overview
-The project is a website for a restaurant that will provide users with information such as menu offerings, business hours, and location. The website aims to display the restaurant’s unique ambiance and cater to an engaging online experience for customers. The homepage will include images of the restaurant’s interior, signature dishes, and chef’s specials. The menu page will provide descriptions of the dishes, their prices, and additional dietary information. The website will also have contact details including the business phone number, social media profiles, and email. To implement our project, we will be working with programming languages namely HTML, CSS, and Javascript. 
+The project is a website for a restaurant that will provide users with information such as menu offerings, business hours, and location. The website aims to display the restaurant’s unique ambiance and cater to an engaging online experience for customers. The homepage will include images of the restaurant’s interior, signature dishes, and chef’s specials. The menu page will provide descriptions of the dishes, their prices, and additional dietary information. The website will also have contact details including the business phone number, social media profiles, and email. To implement our project, we will be working with programming languages namely HTML, CSS, and Javascript. There are unit tests using JUnit to validate backend reservation logic, ensuring reliable table booking functionality and handling of edge cases.
 
 ---
 ## Recording 
